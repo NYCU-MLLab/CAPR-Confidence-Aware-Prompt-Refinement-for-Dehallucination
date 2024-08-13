@@ -72,7 +72,30 @@ Please Download the .json File throught google drive link below and unzip to fol
             ```
 ### Baseline
 - Contain **Vanilla** / **Self-Polish** / **Textgrad** / **Rephrease and Response(RaR)**
-    - Modify base_line.py for differnet baseline work
+    - Modify Black-box model in Line 17-24
+        ```
+        #  gpt-3.5-turbo-0125, gpt-4-turbo
+        # "claude-3-5-sonnet-20240620"
+
+        # api_model='gpt-3.5-turbo-0125'
+        # api_key=key['openai']['api_key']
+
+        # api_model='gpt-4-turbo'
+        # api_key=key['openai']['api_key']
+
+        # api_model='claude-3-5-sonnet-20240620'
+        # api_key=key['claude']['api_key']
+
+        ```
+    - Modify base_line.py for differnet baseline work in line 199-203
+        ```
+        baseline_list=["vanilla","self_polish","RaR"]
+        for baseline in baseline_list:
+            datapath=f'baseline_result/trivia_{api_model}_{baseline}_detail.json'
+            main(baseline,datapath,'extract_answer')
+            evaluate_result(datapath)
+        ```
+    - Run the code in terminal:
         ```
         python base_line.py
         ```
