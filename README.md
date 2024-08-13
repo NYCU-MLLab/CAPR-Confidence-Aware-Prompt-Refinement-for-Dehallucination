@@ -27,7 +27,6 @@ Please Download the .json File throught google drive link below and unzip to fol
         ```
             # 'natural_questions','din0s/asqa',"triviaQA",
             datasets = ["din0s/asqa"]
-            # strategies = ['vanilla']
             strategies = ['vanilla','cot','multi_step']
             sim_models = 'Cos_sim'
 
