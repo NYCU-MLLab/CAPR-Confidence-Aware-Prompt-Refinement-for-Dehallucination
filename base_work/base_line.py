@@ -196,7 +196,7 @@ def main(baseline,datapath,acc_metric='f1'):
                 break
 
 if __name__=="__main__":
-    baseline_list=["vanilla","self_polish","RaR"]
+    baseline_list=["vanilla","self_polish","RaR","textgrad"]
     for baseline in baseline_list:
         datapath=f'baseline_result/trivia_{api_model}_{baseline}_detail.json'
         main(baseline,datapath,'extract_answer')
