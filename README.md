@@ -15,6 +15,12 @@
 ├── pre_experiment.ipynb
 └── README.md
 ```
+## Build ENV
+Please build env thought "miniconda"
+```
+conda env create -f ./environment.yml
+```
+
 ## Preprocessing- Data Download
 Please Download the .json File throught google drive link below and unzip to folder accccording to the structure above respsectively:
 - [Google Link](https://drive.google.com/file/d/13blyu19dmVWNquZ7IzOKxP3GalaH6cwb/view?usp=sharing)
