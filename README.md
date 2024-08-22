@@ -15,7 +15,7 @@
 ├── pre_experiment.ipynb
 └── README.md
 ```
-## Build ENV
+## Build Conda Env
 Please build env thought "miniconda"
 ```
 conda env create -f ./environment.yml
